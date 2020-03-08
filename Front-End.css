@@ -35,7 +35,7 @@
     border: none;
     margin-top: 8px;
     font-size: 17px;
-    width:150px;
+    width:200px;
   }
   /* Login */
   .topnav .login-container button{
@@ -57,9 +57,10 @@
   
   /* Side Bar*/
   .sidenav {
-    width: 130px;
-    background: #eee;
+    width: 152px;
+    background: #9ACD32;
     overflow-x: hidden;
+    height: 550px;
   }
   
 
@@ -67,7 +68,7 @@
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #2196F3;
+    color: #A0522D;
     display: block;
   }
   
@@ -78,7 +79,7 @@
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #2196F3;
+    color: #A0522D;
     display: block;
   }
 
@@ -88,14 +89,6 @@
   
   * {
     box-sizing: border-box;
-  }
-  
-  .dot {
-    height: 12px;
-    width: 12px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
   }
   
   .container {
@@ -117,6 +110,13 @@
   
   .content {
     padding: 10px;
+  }
+
+  .bottom-container{
+    background-color: #FFF8DC;
+    padding:10px;
+    text-align:center;
+    color: #A0522D;
   }
   
   .main {
