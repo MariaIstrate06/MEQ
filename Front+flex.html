@@ -14,8 +14,13 @@
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
             <input type="text" placeholder="Search..">
-            <button id=myBtn>Log in</button>
-            <button type="signButton" onclick="alert('Hello world!')">Sign up</button>
+            <div class="login-container">
+                <form action="/action_page.php">
+                <input type="text" placeholder="Username" name="username">
+                <input type="text" placeholder="Password" name="psw">
+                <button type="submit">Login</button>
+                </form>
+            </div>
         </div>
 
         <div class="center-container">
