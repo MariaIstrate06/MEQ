@@ -117,6 +117,7 @@
     flex-direction: column;
     height: inherit;
     margin-right: 0;
+    width: inherit;
   }
 
   .center-container { /* content + sidebar*/
@@ -130,6 +131,7 @@
     padding: 20px; 
     width: inherit; 
     height: 100%; 
+    align-items: flex-start;
   }
 
   .bottom-container{ /* footer */
@@ -137,9 +139,10 @@
     width: 100%;   
     align-items: flex-end;
     background-color: #FFF8DC;
-    padding:0px;
+    padding-bottom:7px ;
     text-align:center;
     color: #A0522D;
+    
     
   }
 .question {
@@ -170,11 +173,14 @@
 }
 @media screen and (max-width: 1000px) {
   .sidenav  {
-    font-size: 150%;
+    font-size: 100%;
     text-align: center;
   }
   .center-container{
     flex-direction:column;
+  }
+  .content {
+    width: inherit;
   }
 }
 @media screen and (max-width: 1000px) {
