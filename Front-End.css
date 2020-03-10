@@ -73,12 +73,11 @@
   
   /* Side Bar*/
   .sidenav {
-    width: 30%;
+    width: 20%;
     height: inherit;
     background: #9ACD32;
     overflow-x: hidden;
     flex: 0 0 13%;
-    
   }
   
 
@@ -86,7 +85,7 @@
     padding: 6px 6px 6px 15px;
     text-decoration: none;
     font-size: 150%;
-    
+    text-align: center;
     color: black;
     display: block;
   }
@@ -121,7 +120,6 @@
   .center-container { /* content + sidebar*/
     display: flex;
     background-image: url(background_white.png);
-    min-height: 100vh;
   }
 
   .content { /* forumul */
@@ -135,10 +133,9 @@
     width: 100%;   
     align-items: flex-end;
     background-color: #FFF8DC;
-    padding:0px;
     text-align:center;
     color: #A0522D;
-    
+    height: 10%;
   }
 .question {
     font-family: fantasy;
@@ -147,36 +144,32 @@
     font-style: italic;
     letter-spacing: inherit;
     color:darkolivegreen;
-    text-align: left;
 }
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:620px) {
   /* For mobile phones: */
   .content, .sidenav, .topnav, .footer {
     width
     :100%;
   }
 }
-@media screen and (min-width: 1000px) {
-  .sidenav  {
-    font-size: 80%;
-    text-align: left;
-    width: 30%;
+@media screen and (min-width: 600px) {
+  .sidenav a {
+    font-size: 17px;
   }
   .center-container{
     flex-direction:row ;
   }
 }
-@media screen and (max-width: 1000px) {
-  .sidenav  {
-    font-size: 150%;
-    text-align: center;
+@media screen and (max-width: 600px) {
+  .sidenav a {
+    font-size: 8px;
   }
+  
   .center-container{
     flex-direction:column;
   }
-}
-@media screen and (max-width: 1000px) {
-  .topnav  {
-    display: block;
-    text-align: center;
+  .container{
+    position: absolute;
   }
+  
+}
