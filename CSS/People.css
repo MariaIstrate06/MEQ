@@ -1,7 +1,20 @@
 body {
-        background-color: #ffffdb;
-        font-family: 'Ubuntu', sans-serif;
-    }
+   
+    font-family: 'Ubuntu', sans-serif;
+    margin: auto;
+    
+}
+
+
+
+/*///////////////////////TOPNAV/////////////////////////////*/
+
+/* Add a black background color to the top navigation */
+.main{
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
 .topnav {
     background-color: #FFF8DC;
     overflow: hidden;
@@ -28,16 +41,10 @@ body {
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: 	#808000;
+    background-color:#808000;
     color: white;
       
   } 
-  .topnav .login-container{
-    float:right;
-  }
-
-
-
 
 .back-button{
     color: #FFFFFF;
@@ -54,39 +61,31 @@ body {
     background-color:#808000;
     border-radius: 5px;
 }
+
 .container{
-    position: relative;
-    widows: inherit;
+
 }
 div.gallery{
     border: 1px solid #ccc; 
+    
 }
 div.gallery:hover{
     border: 1px solid #777;
+    background-color: antiquewhite;
 }
 div.gallery img{
     width: 100%;
     height: auto;
 }
+/*
+div.gallery img:hover{
+    background-color: antiquewhite
+}*/
 div.desc{
     padding: 15px;
     text-align: center;
 }
-myBtn{
-    color: #FFFFFF;
-    font-family: 'Ubuntu', sans-serif; 
-    text-align: left; 
-    padding: 6px; 
-    text-decoration: none;
-    font-size: 17px;
-    border:none;
-    cursor:pointer;
-    margin-top: 3px;
-    margin-right:5px;
-    margin-bottom: 1 px;
-    background-color:#808000;
-    border-radius: 5px;
-}
+
 
 *{
     box-sizing: border-box;
@@ -96,7 +95,7 @@ myBtn{
     float: left;
     widows: 24.999999%;
 }
-@media only screen and (max-width:700px){
+@media only screen and (max-width:500px){
     .responsive{
         width: 49.99999%;
         margin: 6px 0;
@@ -128,36 +127,3 @@ myBtn{
     
 }
 
-/*--------------------------------------LAST RESORT---------------------------------------------------*/
-/*.image{
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.overlay{
-    position: absolute;
-    top: 0;
-    bottom:0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 30%;
-    opacity: 0;
-    transition: 0.5s ease;
-    background-color: #808000;
-}
-.container:hover .overlay{
-    opacity: 1;
-}
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-*/
