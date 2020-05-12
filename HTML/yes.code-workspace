@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\testjs"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MathML"
+	}
+}

@@ -21,8 +21,7 @@ body {
     }
     
     .backbutton{
-        
-    
+        opacity:1;
     }
     .un {
     width: 76%;
@@ -106,4 +105,4 @@ body {
         .main {
             border-radius: 0px;
         }
-        
+    }
