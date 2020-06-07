@@ -7,11 +7,37 @@
 - GRI DESCHIS: #858585
 - ALT GRI DOAMNE AJUTA: #303030
 */ 
+
+body {
+  width: 100%;
+  height: initial;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden; 
+  overflow-y: hidden; 
+}
+.main { /*toate elementele */
+  text-align: center;
+}
+.title-section { /*landing: title secion*/
+  text-align: center;
+  margin-top: 0;
+  background-color: #1a1a1a;
+}
+
+.second-section{
+  text-align: center;
+}
+
 /* -------------------TOPNAV---------------*/
 .topnav {
     background-color: #303030;
     overflow: hidden;
     text-align: center;
+    position: sticky;
 }
 .topnav a {
     float: left;
@@ -19,7 +45,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size:em;
+    font-size:1.3em;
     display:flex;
 }
 .topnav a:hover {
@@ -29,46 +55,56 @@
 .topnav a.active {
     color: gray;
    /* border: white; */
-    
 } 
 .topnav .login-container{
     float: right; 
     padding-top: 4px; 
 }
+.topnav .login-container button{
+  color: 	#FFFFFF;
+  font-family: 'Roboto', sans-serif; 
+  text-align: center; 
+  padding: 6px; 
+  text-decoration: none;
+  font-size: 17px;
+  border:none;
+  cursor:pointer;
+  margin-top: 5px;
+  margin-right:5px;
+  margin-bottom: 1px;
+  background-color:#9ACD32;
+  border-radius: 5px;
+
+}
+.topnav .login-container button:hover{
+  background: white;
+  color: black;
+}
 /*---------------------TOPNAV END--------------*/
 .fancy-title{
     color: white; 
     font-size: 6em;
-    font-family: 'Roboto'; 
+    font-family: 'Ubuntu'; 
     line-height: 90vh;
     text-align: center;
 }
 span{
   opacity: 0;
-  color: #858585;
   transition: all 1s ease;
+  transform: translateY(50px);
+  display: inline-block;
 }
 span.fade{
   opacity: 1;
-  color: white;
-  transform: translateX(0px);
+  transform: translateY(0px);
 }
 .slogan {
     color: #858585;
-    position: relative;
-    overflow: visible;
-    width: auto; 
-    height: auto;
-    font-family: 'Roboto'; 
-    padding-left: 2.4em; 
+    font-size: 6em;
+    font-family: 'Roboto';
 }
 /*--------------TITLE END--------------*/
-
-
-/*------------------------LEFT SIDE END-----------------------*/
-
-/*----------------------RIGHT SIDE----------------------------*/
-
+/*--------------SLOGAN------------------*/
 .meq-description{
     color: #858585; 
     position: absolute; 
@@ -82,21 +118,8 @@ span.fade{
     width: 100%;
     /*padding: 20px;*/
 }
-  .content .add-comment button{
-        cursor: pointer;
-        border-radius: 5em;
-        color: #fff;
-        background: linear-gradient(to right, #808000, #808100);
-        border: 0;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-        font-family: 'Roboto', sans-serif;
-        margin-left: 0%;
-        font-size: 13px;
-        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
-  }
+
+/*---------------SLOGAN END-------------*/
   /* Login */
 .footer-container button{
     color: 	#FFFFFF;
@@ -109,32 +132,12 @@ span.fade{
     cursor:pointer;
     margin-top: 3px;
     margin-right:5px;
-    margin-bottom: 1 px;
+    margin-bottom: 1px;
     background-color:#808000;
     border-radius: 5px;
     
 }
-  .topnav .login-container button{
-    
-    color: 	#FFFFFF;
-    font-family: 'Roboto', sans-serif; 
-    text-align: center; 
-    padding: 6px; 
-    text-decoration: none;
-    font-size: 17px;
-    border:none;
-    cursor:pointer;
-    margin-top: 3px;
-    margin-right:5px;
-    margin-bottom: 1 px;
-    background-color:#9ACD32;
-    border-radius: 5px;
-    
-      
-  }
-  .topnav .login-container button:hover{
-    background: #9ACD32;
-  }
+  
   
   /* Side Bar*/
   .sidenav {
@@ -169,34 +172,6 @@ span.fade{
   }
 
 
-  body {
-    width: 100%; 
-    height: initial;
-    margin-left: 0;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    font-family: 'Roboto', sans-serif;
-    overflow-x: hidden; 
-    overflow-y: hidden; 
-  }
-  
-  .main { /*toate elementele */
-    text-align: center;
-    background-color:#1a1a1a;
-  }
-
-  .section1 { /* content + sidebar*/
-    text-align: center;
-    background-color: #1a1a1a;
-  }
-
-  .content { /* forumul */
-    padding: 20px; 
-    width: inherit; 
-    height: 100%; 
-    align-items: flex-start;
-  }
 
   /*-----------------FOOTER--------------------------------------------------------------
 
@@ -226,7 +201,7 @@ span.fade{
 }
 .question {
     font-family: fantasy;
-    font-size: 17; 
+    font-size: 17px;
     font-weight: 300;
     font-style: italic;
     letter-spacing: inherit;
@@ -248,7 +223,7 @@ span.fade{
     width: 30%;
     margin: 0 auto; 
   }
-  .center-container{
+  .title-section{
       text-align: center;
       font-size: 70%;
     }
@@ -261,7 +236,7 @@ span.fade{
   .center-container{
     flex-direction:column;
   }
-  .content {
+  .title-section {
     width: inherit;
       font-size: 50%
   }
@@ -270,4 +245,9 @@ span.fade{
     .topnav  {
     margin: 0 auto; 
     }
+}
+@media screen and (max-width:1000px){
+  .title-section {
+      font-size: 50%;
+  }
 }

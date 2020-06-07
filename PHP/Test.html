@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action ="./TEST.php" method="POST">
+    <input type="text" name="textTest" id="textTest">
+    <input type="submit" name="submit" id="submit" onclick="sendData(this.value)">
+</form>
+<br>
+<div id="txtHint"><b>Person info will be listed here...</b></div>
+
+<script>
+    function sendData(str){
+        if (str == "") {
+            document.getElementById("txtHint").innerHTML = "";
+        } else {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("txtHint").innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("GET","TEST.php?q="+str,true);
+            xmlhttp.send();
+        }
+    }
+</script>
+</body>
+</html>
